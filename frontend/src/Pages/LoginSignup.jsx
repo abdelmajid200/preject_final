@@ -19,7 +19,7 @@ const LoginSignup = () => {
   const login = async () =>{
     console.log("Login Function Executed",formData);
     let responseData;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://preject-final-backend.onrender.com/login',{
       method:'post',
       headers:{
         Accept:'application/form-data',
@@ -40,7 +40,7 @@ const LoginSignup = () => {
   const signup = async () =>{
     console.log("Sign Up Function Executed",formData);
     let responseData;
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://preject-final-backend.onrender.com/signup',{
       method:'post',
       headers:{
         Accept:'application/form-data',
