@@ -10,7 +10,7 @@ const ListProduct = () => {
     const [allproducts,setAllproducts] = useState([])
 
 const fetchInfo = async ()=>{
-  await fetch('http://localhost:4000/allproducts')
+  await fetch('https://preject-final-backend.onrender.com/allproducts')
   .then((res)=>res.json())
   .then((data)=>{setAllproducts(data)});
 }
@@ -19,7 +19,7 @@ const fetchInfo = async ()=>{
     },[])
 
     const remove_product = async (id)=>{
-      await fetch('http://localhost:4000/removeproduct',{
+      await fetch('https://preject-final-backend.onrender.com/removeproduct',{
         method:'POST',
         headers:{
           Accept:'application/json',
