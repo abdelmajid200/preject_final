@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './CSS/LoginSignup.css'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
+import { Link } from 'react-router-dom'
 const LoginSignup = () => {
 
   const [state,setState] = useState("Login")
@@ -91,6 +92,10 @@ const LoginSignup = () => {
         <div className="loginsignup-agree">
           <input type="checkbox" name="" id="" />
           <p>By continuing, i agree to the terms of use & privacy policy.</p>
+        </div>
+          <div className="loginsignup-agree">
+          
+        <Link to={'/admin'} style={{textDecoration:"none"}}><span>admin panel</span></Link>
         </div>
        </div>
        <Footer/>
